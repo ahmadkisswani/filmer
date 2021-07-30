@@ -1,0 +1,292 @@
+"========================== INSTALLATION LOG ========================"[2021/07/30 04:01:54] Host: Windows NT DESKTOP-29TP735 10.0 build 18363 (Windows 10) AMD64
+[2021/07/30 04:01:54] PHP version: 7.4.21
+[2021/07/30 04:01:54] Server software: Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/7.4.21
+[2021/07/30 04:01:54] Operating system: WINNT
+[2021/07/30 04:01:54] Memory limit: 512M
+[2021/07/30 04:01:54] Max execution time: 3600
+.============================ POST REQUEST ==========================.
+[2021/07/30 04:01:55] Postback payload: Array
+(
+    [handler] => onCheckRequirements
+)
+
+[2021/07/30 04:01:55] Check requirements: start
+[2021/07/30 04:01:55] Check requirements: end
+[2021/07/30 04:01:55] Execute handler (onCheckRequirements): Array
+(
+    [PHP Version] => Array
+        (
+            [result] => 1
+            [errorMessage] => You need at least 5.6.4 PHP Version to install.
+        )
+
+    [PROC_OPEN] => Array
+        (
+            [result] => 1
+            [errorMessage] => PHP proc_open function needs to be enabled.
+        )
+
+    [PDO] => Array
+        (
+            [result] => 1
+            [errorMessage] => PHP PDO extension is required.
+        )
+
+    [Mbstring] => Array
+        (
+            [result] => 1
+            [errorMessage] => PHP mbstring extension is required.
+        )
+
+    [Fileinfo] => Array
+        (
+            [result] => 1
+            [errorMessage] => PHP fileinfo extension is required.
+        )
+
+    [OpenSSL] => Array
+        (
+            [result] => 1
+            [errorMessage] => PHP openssl extension is required.
+        )
+
+    [GD] => Array
+        (
+            [result] => 1
+            [errorMessage] => PHP openssl extension is required.
+        )
+
+    [Curl] => Array
+        (
+            [result] => 1
+            [errorMessage] => PHP curl functionality needs to be enabled.
+        )
+
+    [Zip] => Array
+        (
+            [result] => 1
+            [errorMessage] => PHP ZipArchive extension needs to be installed.
+        )
+
+)
+
+.============================ POST REQUEST ==========================.
+[2021/07/30 04:01:57] Postback payload: Array
+(
+    [handler] => onCheckFileSystem
+)
+
+[2021/07/30 04:01:57] Check filesystem: start
+[2021/07/30 04:01:57] Check filesystem: end
+[2021/07/30 04:01:57] Execute handler (onCheckFileSystem): Array
+(
+    [0] => Array
+        (
+            [path] => D:/xampp/htdocs/filmer
+            [result] => 1
+            [errorMessage] => 
+        )
+
+    [1] => Array
+        (
+            [path] => D:/xampp/htdocs/filmer/storage
+            [result] => 1
+            [errorMessage] => 
+        )
+
+    [2] => Array
+        (
+            [path] => D:/xampp/htdocs/filmer/storage/app
+            [result] => 1
+            [errorMessage] => 
+        )
+
+    [3] => Array
+        (
+            [path] => D:/xampp/htdocs/filmer/storage/logs
+            [result] => 1
+            [errorMessage] => 
+        )
+
+    [4] => Array
+        (
+            [path] => D:/xampp/htdocs/filmer/storage/framework
+            [result] => 1
+            [errorMessage] => 
+        )
+
+    [5] => Array
+        (
+            [path] => D:/xampp/htdocs/filmer/public/storage
+            [result] => 1
+            [errorMessage] => 
+        )
+
+    [6] => Array
+        (
+            [path] => D:/xampp/htdocs/filmer/resources/views/emails/custom
+            [result] => 1
+            [errorMessage] => 
+        )
+
+    [7] => Array
+        (
+            [path] => D:/xampp/htdocs/filmer/.env.example
+            [result] => 1
+            [errorMessage] => Make sure <strong>.env.example</strong> file has been uploaded properly to your server and is writable.
+        )
+
+    [8] => Array
+        (
+            [path] => D:/xampp/htdocs/filmer/.htaccess
+            [result] => 1
+            [errorMessage] => Make sure <strong>.htaccess</strong> file has been uploaded properly to your server and is writable.
+        )
+
+    [9] => Array
+        (
+            [path] => D:/xampp/htdocs/filmer/public/.htaccess
+            [result] => 1
+            [errorMessage] => Make sure <strong>public/.htaccess</strong> file has been uploaded properly to your server and is writable.
+        )
+
+)
+
+.============================ POST REQUEST ==========================.
+[2021/07/30 04:02:04] Postback payload: Array
+(
+    [handler] => onValidateAndInsertDatabaseCredentials
+    [db_host] => localhost
+    [db_database] => mtdb
+    [db_username] => root
+    [db_password] => 
+    [db_prefix] => 
+)
+
+[2021/07/30 02:02:04] Handler error (onValidateAndInsertDatabaseCredentials): Array and string offset access syntax with curly braces is deprecated
+[2021/07/30 02:02:04] Trace log:
+#0 D:\xampp\htdocs\filmer\vendor\composer\ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Array and strin...', 'D:\\xampp\\htdocs...', 331, Array)
+#1 D:\xampp\htdocs\filmer\vendor\composer\ClassLoader.php(444): include()
+#2 D:\xampp\htdocs\filmer\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('D:\\xampp\\htdocs...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Raven_Client')
+#4 D:\xampp\htdocs\filmer\vendor\sentry\sentry-laravel\src\Sentry\SentryLaravel\SentryLaravel.php(18): spl_autoload_call('Raven_Client')
+#5 D:\xampp\htdocs\filmer\vendor\sentry\sentry-laravel\src\Sentry\SentryLaravel\SentryLaravelServiceProvider.php(81): Sentry\SentryLaravel\SentryLaravel::getClient(Array)
+#6 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\Container.php(726): Sentry\SentryLaravel\SentryLaravelServiceProvider->Sentry\SentryLaravel\{closure}(Object(Illuminate\Foundation\Application), Array)
+#7 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\Container.php(608): Illuminate\Container\Container->build(Object(Closure))
+#8 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\Container.php(575): Illuminate\Container\Container->resolve('sentry')
+#9 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(728): Illuminate\Container\Container->make('sentry')
+#10 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\Container.php(1172): Illuminate\Foundation\Application->make('sentry')
+#11 D:\xampp\htdocs\filmer\vendor\sentry\sentry-laravel\src\Sentry\SentryLaravel\SentryLaravelServiceProvider.php(55): Illuminate\Container\Container->offsetGet('sentry')
+#12 D:\xampp\htdocs\filmer\vendor\sentry\sentry-laravel\src\Sentry\SentryLaravel\SentryLaravelServiceProvider.php(29): Sentry\SentryLaravel\SentryLaravelServiceProvider->bindEvents(Object(Illuminate\Foundation\Application))
+#13 [internal function]: Sentry\SentryLaravel\SentryLaravelServiceProvider->boot()
+#14 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#15 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#16 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#17 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#18 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(788): Illuminate\Container\Container->call(Array)
+#19 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(771): Illuminate\Foundation\Application->bootProvider(Object(Sentry\SentryLaravel\SentryLaravelServiceProvider))
+#20 [internal function]: Illuminate\Foundation\Application->Illuminate\Foundation\{closure}(Object(Sentry\SentryLaravel\SentryLaravelServiceProvider), 14)
+#21 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(772): array_walk(Array, Object(Closure))
+#22 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\BootProviders.php(17): Illuminate\Foundation\Application->boot()
+#23 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(208): Illuminate\Foundation\Bootstrap\BootProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#24 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(267): Illuminate\Foundation\Application->bootstrapWith(Array)
+#25 D:\xampp\htdocs\filmer\public\install_files\php\Installer.php(315): Illuminate\Foundation\Console\Kernel->bootstrap()
+#26 D:\xampp\htdocs\filmer\public\install_files\php\Installer.php(221): Installer->bootFramework()
+#27 D:\xampp\htdocs\filmer\public\install_files\php\Installer.php(152): Installer->insertDBCredentials(Array)
+#28 D:\xampp\htdocs\filmer\public\install_files\php\Installer.php(28): Installer->onValidateAndInsertDatabaseCredentials()
+#29 D:\xampp\htdocs\filmer\public\install_files\php\boot.php(75): Installer->__construct()
+#30 D:\xampp\htdocs\filmer\public\install_files\install.php(1): include('D:\\xampp\\htdocs...')
+#31 D:\xampp\htdocs\filmer\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#32 {main}
+.============================ POST REQUEST ==========================.
+[2021/07/30 04:02:22] Postback payload: Array
+(
+    [handler] => onValidateAndInsertDatabaseCredentials
+    [db_host] => localhost
+    [db_database] => mtdb
+    [db_username] => root
+    [db_password] => 
+    [db_prefix] => 
+)
+
+[2021/07/30 02:02:22] Handler error (onValidateAndInsertDatabaseCredentials): Array and string offset access syntax with curly braces is deprecated
+[2021/07/30 02:02:22] Trace log:
+#0 D:\xampp\htdocs\filmer\vendor\composer\ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Array and strin...', 'D:\\xampp\\htdocs...', 331, Array)
+#1 D:\xampp\htdocs\filmer\vendor\composer\ClassLoader.php(444): include()
+#2 D:\xampp\htdocs\filmer\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('D:\\xampp\\htdocs...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Raven_Client')
+#4 D:\xampp\htdocs\filmer\vendor\sentry\sentry-laravel\src\Sentry\SentryLaravel\SentryLaravel.php(18): spl_autoload_call('Raven_Client')
+#5 D:\xampp\htdocs\filmer\vendor\sentry\sentry-laravel\src\Sentry\SentryLaravel\SentryLaravelServiceProvider.php(81): Sentry\SentryLaravel\SentryLaravel::getClient(Array)
+#6 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\Container.php(726): Sentry\SentryLaravel\SentryLaravelServiceProvider->Sentry\SentryLaravel\{closure}(Object(Illuminate\Foundation\Application), Array)
+#7 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\Container.php(608): Illuminate\Container\Container->build(Object(Closure))
+#8 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\Container.php(575): Illuminate\Container\Container->resolve('sentry')
+#9 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(728): Illuminate\Container\Container->make('sentry')
+#10 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\Container.php(1172): Illuminate\Foundation\Application->make('sentry')
+#11 D:\xampp\htdocs\filmer\vendor\sentry\sentry-laravel\src\Sentry\SentryLaravel\SentryLaravelServiceProvider.php(55): Illuminate\Container\Container->offsetGet('sentry')
+#12 D:\xampp\htdocs\filmer\vendor\sentry\sentry-laravel\src\Sentry\SentryLaravel\SentryLaravelServiceProvider.php(29): Sentry\SentryLaravel\SentryLaravelServiceProvider->bindEvents(Object(Illuminate\Foundation\Application))
+#13 [internal function]: Sentry\SentryLaravel\SentryLaravelServiceProvider->boot()
+#14 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#15 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#16 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#17 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#18 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(788): Illuminate\Container\Container->call(Array)
+#19 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(771): Illuminate\Foundation\Application->bootProvider(Object(Sentry\SentryLaravel\SentryLaravelServiceProvider))
+#20 [internal function]: Illuminate\Foundation\Application->Illuminate\Foundation\{closure}(Object(Sentry\SentryLaravel\SentryLaravelServiceProvider), 14)
+#21 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(772): array_walk(Array, Object(Closure))
+#22 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\BootProviders.php(17): Illuminate\Foundation\Application->boot()
+#23 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(208): Illuminate\Foundation\Bootstrap\BootProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#24 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(267): Illuminate\Foundation\Application->bootstrapWith(Array)
+#25 D:\xampp\htdocs\filmer\public\install_files\php\Installer.php(315): Illuminate\Foundation\Console\Kernel->bootstrap()
+#26 D:\xampp\htdocs\filmer\public\install_files\php\Installer.php(221): Installer->bootFramework()
+#27 D:\xampp\htdocs\filmer\public\install_files\php\Installer.php(152): Installer->insertDBCredentials(Array)
+#28 D:\xampp\htdocs\filmer\public\install_files\php\Installer.php(28): Installer->onValidateAndInsertDatabaseCredentials()
+#29 D:\xampp\htdocs\filmer\public\install_files\php\boot.php(75): Installer->__construct()
+#30 D:\xampp\htdocs\filmer\public\install_files\install.php(1): include('D:\\xampp\\htdocs...')
+#31 D:\xampp\htdocs\filmer\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#32 {main}
+.============================ POST REQUEST ==========================.
+[2021/07/30 04:02:23] Postback payload: Array
+(
+    [handler] => onValidateAndInsertDatabaseCredentials
+    [db_host] => localhost
+    [db_database] => mtdb
+    [db_username] => root
+    [db_password] => 
+    [db_prefix] => 
+)
+
+[2021/07/30 02:02:23] Handler error (onValidateAndInsertDatabaseCredentials): Array and string offset access syntax with curly braces is deprecated
+[2021/07/30 02:02:23] Trace log:
+#0 D:\xampp\htdocs\filmer\vendor\composer\ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Array and strin...', 'D:\\xampp\\htdocs...', 331, Array)
+#1 D:\xampp\htdocs\filmer\vendor\composer\ClassLoader.php(444): include()
+#2 D:\xampp\htdocs\filmer\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('D:\\xampp\\htdocs...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Raven_Client')
+#4 D:\xampp\htdocs\filmer\vendor\sentry\sentry-laravel\src\Sentry\SentryLaravel\SentryLaravel.php(18): spl_autoload_call('Raven_Client')
+#5 D:\xampp\htdocs\filmer\vendor\sentry\sentry-laravel\src\Sentry\SentryLaravel\SentryLaravelServiceProvider.php(81): Sentry\SentryLaravel\SentryLaravel::getClient(Array)
+#6 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\Container.php(726): Sentry\SentryLaravel\SentryLaravelServiceProvider->Sentry\SentryLaravel\{closure}(Object(Illuminate\Foundation\Application), Array)
+#7 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\Container.php(608): Illuminate\Container\Container->build(Object(Closure))
+#8 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\Container.php(575): Illuminate\Container\Container->resolve('sentry')
+#9 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(728): Illuminate\Container\Container->make('sentry')
+#10 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\Container.php(1172): Illuminate\Foundation\Application->make('sentry')
+#11 D:\xampp\htdocs\filmer\vendor\sentry\sentry-laravel\src\Sentry\SentryLaravel\SentryLaravelServiceProvider.php(55): Illuminate\Container\Container->offsetGet('sentry')
+#12 D:\xampp\htdocs\filmer\vendor\sentry\sentry-laravel\src\Sentry\SentryLaravel\SentryLaravelServiceProvider.php(29): Sentry\SentryLaravel\SentryLaravelServiceProvider->bindEvents(Object(Illuminate\Foundation\Application))
+#13 [internal function]: Sentry\SentryLaravel\SentryLaravelServiceProvider->boot()
+#14 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#15 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#16 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#17 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Container\Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#18 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(788): Illuminate\Container\Container->call(Array)
+#19 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(771): Illuminate\Foundation\Application->bootProvider(Object(Sentry\SentryLaravel\SentryLaravelServiceProvider))
+#20 [internal function]: Illuminate\Foundation\Application->Illuminate\Foundation\{closure}(Object(Sentry\SentryLaravel\SentryLaravelServiceProvider), 14)
+#21 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(772): array_walk(Array, Object(Closure))
+#22 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\BootProviders.php(17): Illuminate\Foundation\Application->boot()
+#23 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(208): Illuminate\Foundation\Bootstrap\BootProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#24 D:\xampp\htdocs\filmer\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(267): Illuminate\Foundation\Application->bootstrapWith(Array)
+#25 D:\xampp\htdocs\filmer\public\install_files\php\Installer.php(315): Illuminate\Foundation\Console\Kernel->bootstrap()
+#26 D:\xampp\htdocs\filmer\public\install_files\php\Installer.php(221): Installer->bootFramework()
+#27 D:\xampp\htdocs\filmer\public\install_files\php\Installer.php(152): Installer->insertDBCredentials(Array)
+#28 D:\xampp\htdocs\filmer\public\install_files\php\Installer.php(28): Installer->onValidateAndInsertDatabaseCredentials()
+#29 D:\xampp\htdocs\filmer\public\install_files\php\boot.php(75): Installer->__construct()
+#30 D:\xampp\htdocs\filmer\public\install_files\install.php(1): include('D:\\xampp\\htdocs...')
+#31 D:\xampp\htdocs\filmer\public\index.php(4): require_once('D:\\xampp\\htdocs...')
+#32 {main}
