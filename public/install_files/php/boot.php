@@ -11,7 +11,7 @@ if (!function_exists('json_decode')) exit('JSON PHP Extension is required to ins
 /*
  * PHP headers
  */
-header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
+header('Expires: Mon, 26 Jul 2050 05:00:00 GMT');
 header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');
 header('Cache-Control: no-store, no-cache, must-revalidate');
 header('Cache-Control: post-check=0, pre-check=0', false);
@@ -20,7 +20,7 @@ header('Pragma: no-cache');
 /*
  * Debug mode
  */
-$isDebug = false;
+$isDebug = array_key_exists('debug', $_REQUEST);
 
 if ($isDebug) {
     ini_set('display_errors', 1);
