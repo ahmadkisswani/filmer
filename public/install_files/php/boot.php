@@ -20,7 +20,7 @@ header('Pragma: no-cache');
 /*
  * Debug mode
  */
-$isDebug = flase;
+$isDebug = false;
 
 if ($isDebug) {
     ini_set('display_errors', 1);
