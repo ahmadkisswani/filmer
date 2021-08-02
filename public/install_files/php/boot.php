@@ -20,7 +20,7 @@ header('Pragma: no-cache');
 /*
  * Debug mode
  */
-$isDebug = array_key_exists('debug', $_REQUEST);
+$isDebug = flase;
 
 if ($isDebug) {
     ini_set('display_errors', 1);
